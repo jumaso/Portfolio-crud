@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar imóvel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <header class="text-white font-bold flex items-center" ">
+        <nav class=" bg-gray-700 text-center m-auto p-3 w-4/5 rounded-b-md flex items-center "">
+        <a href="#" class="p-3">Cadastrar</a>
+        <span>|</span>
+        <a href="./pages/imoveis.html" class="p-3">Ver imoveis cadastrados</a>
+        </nav>
+    </header>
+
+    <h2 class=" text-center text-xl m-auto p-3 w-4/5 rounded-b-md font-bold">Editar imóvel:</h2>
+    <form name="editar" class="bg-gray-700 m-auto p-3 w-4/5 rounded-md flex-col ">
+        <div class="campo">
+            <label for="tipo" class="font-bold">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" class="border-solid w-full rounded ">
+        </div>
+
+        <div class="campo">
+            <label for="descricao" class="font-bold">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" class="border-solid w-full rounded ">
+        </div>
+
+        <div class="campo">
+            <label for="quartos" class="font-bold ">Quartos:</label>
+            <input type=" text" id="quartos" name="quartos" class="border-solid w-full rounded">
+        </div>
+
+        <div class="campo">
+            <label for="valor" class="font-bold">Valor:</label>
+            <input type="text" id="valor" name="valor" class="border-solid w-full rounded">
+        </div>
+
+        <div class="campo">
+            <label for="vendaoualuguel" class="font-bold">Venda ou Aluguel?</label>
+            <input type="text" id="vendaoualuguel" name="vendaoualuguel" class="border-solid w-full rounded ">
+        </div>
+
+        <div class="campo">
+            <label for="url_foto" class="font-bold">Foto do imóvel</label>
+            <input type="text" id="url_foto" name="url_foto" class="border-solid w-full rounded ">
+        </div>
+
+        <div class="flex flex-row justify-end p-5">
+            <button type="button" onclick="cancelarEdicao()"
+                class="bg-red-500 box-border rounded font-bold px-6 py-2 mr-3">Cancelar</button>
+            <button type=" submit" class="bg-green-400 box-border rounded font-bold  px-6 py-2">Salvar</button>
+        </div>
+    </form>
+
+    <script src="./editar.js" type="module"></script>
+</body>
+
+</html>
